@@ -1,0 +1,8 @@
+Question 1: In the hint above, what is the result of the calculation data['timestamp']*fit.slope + fit.intercept? What is the type, and describe the values.
+
+Answer 2:The best fit is calculated using slope, intercept, and data ['timestamp']. The hint equation calculates y values for the for the best fit. The values are also data['rating'] which is calculated using the content slope and intercept. 
+
+
+Question 2: In the same hint, why does this produce a fit line on the graph? Why are the created_at values and timestamp values paired correctly to make points on the plot?
+
+Answer 2: Linear regression function in in python produces results to plot best fit. And from the mathematics linear equation y=mX+c where m is the slope, c is the intercept and data['stamp'] is x values in the equation. The timestamp and created_at are same but in different format/datatype.
