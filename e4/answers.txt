@@ -1,0 +1,5 @@
+Answer1::
+Looking at the scatter plot, daily temperature are not a good way to predict population density. The points are all spread over and scattered at the high temperatures. Even if we consider the noise in the sensor and try to filter the noise, we don't get any relation. A vertical will be there for the temperatures greater than 35.
+
+Answer2:
+uncompressed files are relatively large and takes up more space on disk. Files/data is loaded into memory before being used. From operating systems course, I recall paging used to access data in disk. Uncompressed file being large would take up more space hence causing higher number of page faults which is a clear overhead for processing times
