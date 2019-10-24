@@ -1,0 +1,1 @@
+Answer1: Histogram is not normally distributed, it is left skewed

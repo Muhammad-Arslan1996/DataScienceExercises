@@ -36,12 +36,13 @@ def main():
     outputFilename = sys.argv[3]
 
     stations = pd.read_json(stations_file, lines=True)
+    print (stations)
     city_data = pd.read_csv(city_data_file)
     city_data = city_data.dropna()
     city_data['area/sq(km)'] = city_data['area']/1000000
     city_data = city_data[city_data['area/sq(km)'] <= 10000]
     city_data['population_density'] = city_data['population']/city_data['area']
-    city_tmax = city_data.apply(best_tmax, args=(stations,), axis=1)
+    #city_tmax = city_data.apply(best_tmax, args=(stations,), axis=1)
     city_data['t_max'] = city_tmax/10
     plt.plot(city_data['t_max'], city_data['population_density'], 'b.')
     plt.xlabel('Avg Max Temperature (\u00b0C)')

@@ -1,0 +1,13 @@
+Answer1: 
+square root of the original data was the closest to satisfying the assumptions of a T-test. one variable with normality problems, one normal and both with equal variance test pass.
+
+Answer2:
+original T-test: The means of weekday and weekend comments are not same. It could or could not be same. When we reject the null hypothesis, we can't come get the right answer.
+
+transformed data T-test: if we reject than the two data sets does not have equal variances
+
+Answer3:
+From the number Man WhitneyU test does the better job giving better results with the least data manipulation. Transforming came close but it failed the normality test.
+
+Answer4:
+comment_count columns sum and mean for each weekday and weekend dataframe produces higher comments  for weekday

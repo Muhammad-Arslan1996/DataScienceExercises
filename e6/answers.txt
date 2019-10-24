@@ -1,0 +1,17 @@
+Answer1:
+
+
+Answer2: 
+We had to do 21 test if we did p-test for each.
+Probability = 0.95 ^ 21 = 0.3405616263
+P-value = 1 - 0.3405616263 = 0.6594383737
+
+Answer3: top to bottom - fastest to slowest
+partiton_sort
+qs1
+qs3 and qs5
+qs2
+qs4
+merge1
+
+qs3 and qs5 cannot b distinguished, even their mean difference is very low.

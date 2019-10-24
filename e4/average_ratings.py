@@ -8,6 +8,7 @@ def getMeanRatingForMatches(movie, ratingDf, n):
     closeMatch = difflib.get_close_matches(movie, ratingDf["title"], n = n, cutoff = 0.6)
     indexForRating = ratingDf['title'].isin(closeMatch)
     location = ratingDf.loc[indexForRating]
+    print(location)
     return location['rating'].mean()
 
 def main():
