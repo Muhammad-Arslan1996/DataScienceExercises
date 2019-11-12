@@ -1,1 +1,3 @@
-Answer1: Histogram is not normally distributed, it is left skewed
+Answer1: Histogram is not normally distributed, it is left skewed. So it is not close-enough to being normal to look at the OLS p-value. We can't conclude that rating are increasing from linear regression because we can't reject the null hypothesis being rating are decreasing.
+
+Answer2: The new Kalman filter we applied in better in terms that we gave a better transition(prediction) matrix this time with more data and an additional feature. But the overall filtering doesn't improve because the increase in data also results in increase in noise.
