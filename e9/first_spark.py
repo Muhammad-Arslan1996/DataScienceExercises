@@ -31,10 +31,7 @@ def main(in_directory, out_directory):
 
     # Aggregate by the bin number.
     grouped = with_bins.groupBy(with_bins['bin'])
-    groups = grouped.agg(
-        functions.sum(with_bins['x']),
-        functions.avg(with_bins['y']),
-        functions.count('*'))
+    groups = grouped.agg(functions.sum(with_bins['x']), functions.avg(with_bins['y']), functions.count('*'))
 
     # We know groups has <=10 rows, so it can safely be moved into two partitions.
     groups = groups.sort(groups['bin']).coalesce(2)
